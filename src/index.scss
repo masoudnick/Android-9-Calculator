@@ -1,0 +1,28 @@
+:root {
+  color-scheme: light dark;
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --clr-background: #f3f4f9;
+  --clr-display: #fff;
+  --clr-green: #38d6c9;
+  --clr-number: #7790c2;
+  --clr-shadow-1: #edeef3;
+  --clr-shadow-2: #fafbff;
+
+  --corner-radius: 0.8rem;
+  --btn-corner-radius: 0.7rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: right;
+  color: #464646;
+  margin: 0;
+  background: var(--clr-background);
+}
