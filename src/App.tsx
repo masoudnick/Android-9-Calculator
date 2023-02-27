@@ -42,15 +42,43 @@ function App() {
   return (
     <div className="calculator">
       <div className="display">
-        <div className="expression">
-          {totalExpression.length ? totalExpression : "0"}
-        </div>
         <div className="result">
           {!expressionComplete && (currentValue.length ? currentValue : "0")}
           {expressionComplete && result}
         </div>
+        <div className="expression">
+          {totalExpression.length ? totalExpression : "0"}
+        </div>
       </div>
       <div className="keypad">
+        <button
+          className="operator"
+          onClick={handleOperatorClick}
+          data-type="clear"
+        >
+          mc
+        </button>
+        <button
+          className="operator"
+          onClick={handleOperatorClick}
+          data-type="clear"
+        >
+          m+
+        </button>
+        <button
+          className="operator"
+          onClick={handleOperatorClick}
+          data-type="clear"
+        >
+          m-
+        </button>
+        <button
+          className="operator"
+          onClick={handleOperatorClick}
+          data-type="clear"
+        >
+          mr
+        </button>
         <button
           className="operator clear"
           onClick={handleOperatorClick}
